@@ -3,7 +3,7 @@ package seleniumBasics;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Base {
+public class BasePgm {
 	public WebDriver driver;
 
 	public void initializeBrowser() {
@@ -18,7 +18,7 @@ public class Base {
 	}
 
 	public static void main(String[] args) {
-		Base base = new Base();
+		BasePgm base = new BasePgm();
 		base.initializeBrowser();
 		base.browserCloseAndQuit();
 	}
