@@ -11,7 +11,13 @@ public class HandlingLocators extends BasePgm{
 	driver.findElement(By.name("viewport"));
 	driver.findElement(By.linkText("Ajax Form Submit"));
 	driver.findElement(By.partialLinkText("Ajax"));
-}
+	driver.findElement(By.cssSelector("button[id='button-one']"));
+	driver.findElement(By.xpath("//input[@id='single-input-field'])"));
+	driver.findElement(By.xpath("//button[text()='Show Message']"));
+	driver.findElement(By.xpath("//button[@id='button-one' and @type='button']"));
+	driver.findElement(By.xpath("//button[@id='button-one' or @id='button-one-electronics']"));
+	}
+	
 	public static void main(String[] args) {
 		
 
