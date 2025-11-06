@@ -1,6 +1,6 @@
 package seleniumBasics;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.By;                                                    
 
 public class HandlingLocators extends BasePgm{
 	public void verifyLocator() {
@@ -16,6 +16,12 @@ public class HandlingLocators extends BasePgm{
 	driver.findElement(By.xpath("//button[text()='Show Message']"));
 	driver.findElement(By.xpath("//button[@id='button-one' and @type='button']"));
 	driver.findElement(By.xpath("//button[@id='button-one' or @id='button-one-electronics']"));
+	driver.findElement(By.xpath("//div[contains (text(), 'Single Input Field')]//parent::div[@class='card']"));
+	driver.findElement(By.xpath("//child::button[@id='button-one']"));
+	driver.findElement(By.xpath("//button[@id='button-one']//following::div[@class='card']"));
+	driver.findElement(By.xpath("//button[@id='button-one']//preceding:: div[@class='card']"));
+	driver.findElement(By.xpath("//button[@id='button-one']//ancestor::div"));
+	driver.findElement(By.xpath("//div[@class='card']//descendant::div"));                                                                                               
 	}
 	
 	public static void main(String[] args) {
