@@ -10,6 +10,11 @@ public class WebElementCommands extends BasePgm{
 	messageTextBox.sendKeys("Neethu");
 	WebElement showMessagebutton=driver.findElement(By.id("button-one"));
 	showMessagebutton.click();
+	WebElement text=driver.findElement(By.id("message-one"));
+	System.out.println(text.getText());
+	System.out.println(text.getTagName());
+	messageTextBox.clear();
+	System.out.println(showMessagebutton.getCssValue("background-color"));
 }
 	public static void main(String[] args) {
 		WebElementCommands webElementCommands=new WebElementCommands();
