@@ -10,6 +10,8 @@ public class WebElementCommands extends BasePgm{
 	messageTextBox.sendKeys("Neethu");
 	WebElement showMessagebutton=driver.findElement(By.id("button-one"));
 	showMessagebutton.click();
+	System.out.println(showMessagebutton.isDisplayed());
+	System.out.println(showMessagebutton.isEnabled());
 	WebElement text=driver.findElement(By.id("message-one"));
 	System.out.println(text.getText());
 	System.out.println(text.getTagName());
