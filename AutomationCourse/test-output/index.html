@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-940618851\testng-customsuite.xml</span>
+                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1576915807\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="seleniumBasics.TestngAnnotations" class="method navigator-link" hash-for-method="sampleTestCase">sampleTestCase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScripts.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginWithInValidUsernameAndInValidPassword">verifyWhetherUserIsAbleToLoginWithInValidUsernameAndInValidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">seleniumBasics.TestngAnnotations</span>
+              <span class="class-name">testScripts.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sampleTestCase">
-                  </a> <!-- sampleTestCase -->
-                  <span class="method-name">sampleTestCase</span>
+                  <a name="verifyWhetherUserIsAbleToLoginWithInValidUsernameAndInValidPassword">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginWithInValidUsernameAndInValidPassword -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginWithInValidUsernameAndInValidPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-940618851\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1576915807\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;seleniumBasics.TestngAnnotations&quot;&gt;
+      &lt;class name=&quot;testScripts.LoginTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;sampleTestCase&quot;/&gt;
+          &lt;include name=&quot;verifyWhetherUserIsAbleToLoginWithInValidUsernameAndInValidPassword&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- seleniumBasics.TestngAnnotations --&gt;
+      &lt;/class&gt; &lt;!-- testScripts.LoginTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -191,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sampleTestCase')
-data.setCell(0, 2, 'seleniumBasics.TestngAnnotations')
-data.setCell(0, 3, 28);
+data.setCell(0, 1, 'verifyWhetherUserIsAbleToLoginWithInValidUsernameAndInValidPassword')
+data.setCell(0, 2, 'testScripts.LoginTest')
+data.setCell(0, 3, 370);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 ms</span>
+              <span class="suite-total-time">Total running time: 370 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,9 +213,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScripts.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithValidCredential</span>
+                <br/>
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithValidUsernameAndInValidPassword</span>
+                <br/>
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithInValidUsernameAndValidPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -224,43 +235,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">seleniumBasics.TestngAnnotations</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">beforeSuite</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">65 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">141 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="chronological-class-name">testScripts.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethodSample</span>
-                <span class="method-start">212 ms</span>
+                <span class="method-name">initializeBrowser</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">sampleTestCase</span>
-                <span class="method-start">218 ms</span>
+                <span class="method-name">verifyWhetherUserIsAbleToLoginWithInValidUsernameAndInValidPassword</span>
+                <span class="method-start">3807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethodSample</span>
-                <span class="method-start">254 ms</span>
+                <span class="method-name">browserCloseAndQuit</span>
+                <span class="method-start">4184 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">267 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">281 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">afterSuite</span>
-                <span class="method-start">664 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
